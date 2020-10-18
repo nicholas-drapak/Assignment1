@@ -1,6 +1,9 @@
-import java.util.Random;
-
+/*
+The Monster class is responsible for all player monsters.
+ */
 public class Monster {
+
+    //Object Atributes.
     public String name;
     private String type;
     private int hp;
@@ -12,9 +15,9 @@ public class Monster {
     private Move move3;
     private Move move4;
 
+    //Constructors
     public Monster() {
     }
-
     public Monster(String name, String type, int hp, int speed, int attack, int defence, Move move1, Move move2, Move move3, Move move4) {
         this.name = name;
         this.type = type;
@@ -28,6 +31,7 @@ public class Monster {
         this.move4 = move4;
     }
 
+    //Returns one designated move the monster has.
     public Move getMove(int moveNumber) {
         switch (moveNumber) {
             case 1:
@@ -42,21 +46,33 @@ public class Monster {
                 return null;
         }
     }
+
+    //Returns the name of the monster.
     public String getName(){
         return this.name;
     }
+
+    //Returns the hitpoints of the monster.
     public int getHP(){
         return this.hp;
     }
+
+    //Returns the speed of the monster.
     public int getSpeed(){
         return this.speed;
     }
+
+    //Returns the attack power of the monster.
     public int getAttack(){
         return this.attack;
     }
+
+    //Returns the defence of the monster.
     public int getDefence(){
         return this.defence;
     }
+
+    //takeDamage is responsible for dealing damage to the monster.
     public void takeDamage(int damageTaken){
             this.hp -= damageTaken;
     }

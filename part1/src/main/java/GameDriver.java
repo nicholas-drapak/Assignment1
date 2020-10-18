@@ -6,8 +6,8 @@ public class GameDriver {
 		Move move4 = new Move("Razor Leaf", "Grass", 55, 0.95f);
 		Monster monster = new Monster("Bulbasaur", "Grass", 240, 45, 49, 49, move1, move2, move3, move4);
 		HumanPlayer player = new HumanPlayer(monster);
-		
-		move1 = new Move("Scratch", "Normal", 40, 1.0f);
+
+        move1 = new Move("Scratch", "Normal", 40, 1.0f);
 		move2 = new Move("Ember", "Fire", 40, 1.0f);
 		move3 = new Move("Peck", "Flying", 35, 1.0f);
 		move4 = new Move("Fire Spin", "Fire", 35, 0.85f);
@@ -21,8 +21,8 @@ public class GameDriver {
 			System.out.printf("%s has %d HP\n", enemy.getMonster().getName(), enemy.getMonster().getHP());
 			
 			// decide the next move
-			int playerMove = player.chooseMove();
-			int enemyMove = enemy.chooseMove();
+			Move playerMove = player.chooseMove();
+			Move enemyMove = enemy.chooseMove();
 			
 			// execute the next move
 			if (player.isFasterThan(enemy)) {
@@ -30,7 +30,8 @@ public class GameDriver {
 				if (!enemy.hasLost()) {
 					enemy.attack(player, enemyMove);
 				}
-			} else {
+			}
+			else {
 				enemy.attack(player, enemyMove);
 				if (!player.hasLost()) {
 					player.attack(enemy, playerMove);

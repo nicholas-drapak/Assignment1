@@ -6,7 +6,7 @@ Your name:  Nicholas Drapak
 
 Your teammates name:
 
-#Changes I've made in part 3:
+# Changes I've made in part 3:
 - Integrated vulnerabilities, so monsters will sometimes take more, less, the same, or no damage based on both the type of attack and the type of monster.
 - More text readouts, including as "It's super effective!", "The attack missed...", and the final health total of the winning monster.
 - Allowed the selection of monsters from a list, as well as a choice for a random selection.

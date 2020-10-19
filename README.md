@@ -2,9 +2,15 @@
 
 ## Identification
 
-Your name:  `INSERT YOUR NAME HERE`
+Your name:  Nicholas Drapak
 
-Your teammates name:  `INSERT YOUR TEAMMATES NAME HERE (if you have one)`
+Your teammates name:
+
+#Changes I've made in part 3:
+- Integrated vulnerabilities, so monsters will sometimes take more, less, the same, or no damage based on both the type of attack and the type of monster.
+- More text readouts, including as "It's super effective!", "The attack missed...", and the final health total of the winning monster.
+- Allowed the selection of monsters from a list, as well as a choice for a random selection.
+- Added a text document with 9 monsters, new entries are automatically integrated into the list of monsters selectable while running the program.
 
 ## Collaboration Policy
 Students are encouraged to work in teams of two students for this assignment. Students can work alone, if they prefer.  Teams larger than 2 are not permitted.

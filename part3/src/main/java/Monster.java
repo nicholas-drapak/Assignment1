@@ -15,6 +15,7 @@ public class Monster {
     private Move move3;
     private Move move4;
 
+
     //Constructors
     public Monster() {
     }
@@ -50,6 +51,11 @@ public class Monster {
     //Returns the name of the monster.
     public String getName(){
         return this.name;
+    }
+
+    //Returns the type of the monster.
+    public String getType(){
+        return this.type;
     }
 
     //Returns the hitpoints of the monster.
